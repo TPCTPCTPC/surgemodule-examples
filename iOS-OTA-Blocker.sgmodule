@@ -4,7 +4,7 @@
 
 [Rule]
 URL-REGEX,^https:\/\/mesu\.apple\.com\/assets\/com_apple_MobileAsset_SoftwareUpdate\/,REJECT-TINYGIF
-URL-REGEX,^http:\/\/updates-http\.cdn-apple\.com\/.+\/com_apple_MobileAsset_SoftwareUpdate\/,REJECT_TINYGIF
+URL-REGEX,^http:\/\/updates-http\.cdn-apple\.com\/.+\/com_apple_MobileAsset_SoftwareUpdate\/,REJECT-TINYGIF
 
 [MITM]
 hostname = %APPEND% mesu.apple.com:443
