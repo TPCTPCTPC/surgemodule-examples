@@ -1,0 +1,10 @@
+#!name=iOS Update Blocker
+#!desc=Blocking the download of iOS update, whilst keeping the update information. No Badges on Setting app.
+
+
+[Rule]
+URL-REGEX,^https:\/\/mesu\.apple\.com\/assets\/com_apple_MobileAsset_SoftwareUpdate\/,REJECT-TINYGIF
+URL-REGEX,^http:\/\/updates-http\.cdn-apple\.com\/.+\/com_apple_MobileAsset_SoftwareUpdate\/,REJECT_TINYGIF
+
+[MITM]
+hostname = %APPEND% mesu.apple.com:443
